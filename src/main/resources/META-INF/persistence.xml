@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="default">
+
+        <class>com.tilmeez.hibernate.demo.entity.StudentEntity</class>
+        <class>com.tilmeez.hibernate.demo.entity.InstructorEntity</class>
+        <class>com.tilmeez.hibernate.demo.entity.InstructorDetailEntity</class>
+        <class>com.tilmeez.hibernate.demo.entity.NewEntity</class>
+        <class>com.tilmeez.hibernate.demo.entity.NewEntity</class>
+        <properties>
+            <property name="hibernate.connection.url"
+                      value="jdbc:postgresql://ec2-52-30-159-47.eu-west-1.compute.amazonaws.com:5432/d2j5mchnh8vql4"/>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+            <property name="hibernate.connection.username" value="ouxptxqkhymyap"/>
+            <property name="hibernate.connection.password"
+                      value="b597e7d85a71150fb92ecdeeba9195877f2367dfd9ed04c0011db39400eabd4e"/>
+        </properties>
+    </persistence-unit>
+</persistence>
